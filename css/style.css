@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+}
+
+img,
+picture {
+  max-width: 100%;
+}
+
+p {
+  font-size: 16px;
+}
+
+.container {
+  max-width: 90%;
+  padding-inline: 16px;
+  margin-inline: auto;
+}
+
+body {
+  background-color: hsl(225, 100%, 94%);
+  background-image: url(../images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+  height: 100vh;
+}
+body svg {
+  width: 100vw;
+  height: 100vh;
+}
+body main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+body main .container .card {
+  overflow: hidden;
+  background: hsl(225, 100%, 98%);
+  border-radius: 1em;
+}
+body main .container .card img.hero {
+  width: 100%;
+}
+body main .container .card .card-body {
+  padding: 2em;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2em;
+}
+body main .container .card .card-body .plan {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: hsl(225, 100%, 94%);
+  padding: 10px;
+  border-radius: 10px;
+  gap: 1rem;
+}
+body main .container .card .card-body .plan a {
+  color: hsl(245, 75%, 52%);
+}
+body main .container .card .card-body .plan a:hover {
+  color: #8b82ed;
+  text-decoration: none;
+}
+body main .container .card .card-body a.btn {
+  padding: 10px 20px;
+  text-decoration: none;
+  color: hsl(225, 100%, 98%);
+  background: hsl(245, 75%, 52%);
+  width: 100%;
+  border-radius: 10px;
+  text-align: center;
+}
+body main .container .card .card-body a.btn:hover {
+  background: #8b82ed;
+}
+body main .container .card .card-body a.cancel {
+  text-decoration: none;
+  color: hsl(224, 23%, 55%);
+}
+body main .container .card .card-body a.cancel:hover {
+  color: black;
+}
+body main .attribution {
+  padding: 1em;
+  font-size: 11px;
+  text-align: center;
+}
+body main .attribution a {
+  color: hsl(228, 45%, 44%);
+}
+@media (max-width: 767px) {
+  body {
+    background-image: url(../images/pattern-background-mobile.svg);
+  }
+  body main .container .card .card-body {
+    padding: 5px;
+  }
+  body main .container .card .card-body h2 {
+    font-size: 12px;
+  }
+  body main .container .card .card-body p {
+    font-size: 10px;
+  }
+  body main .container .card .card-body .plan {
+    justify-content: center;
+    gap: 2px;
+  }
+  body main .container .card .card-body .plan .price h4 {
+    font-size: 8px;
+  }
+  body main .container .card .card-body .plan .price p {
+    font-size: 6px;
+  }
+  body main .container .card .card-body .plan a {
+    font-size: 6px;
+  }
+  body main .container .card .card-body a.btn {
+    font-size: 9px;
+  }
+  body main .container .card .card-body a {
+    font-size: 10px;
+  }
+  body main .attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+  body main .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+}/*# sourceMappingURL=style.css.map */

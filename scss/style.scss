@@ -1,0 +1,147 @@
+@use "globals";
+@use "variables";
+
+// Main
+body {
+  background-color: variables.$PaleBlue;
+  background-image: url(../images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  svg {
+    width: 100vw;
+    height: 100vh;
+  }
+  position: relative;
+  height: 100vh;
+  main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    .container {
+      .card {
+        overflow: hidden;
+        background: variables.$VeryPaleBlue;
+        border-radius: 1em;
+        img.hero {
+          width: 100%;
+        }
+        .card-body {
+          padding: 2em;
+          text-align: center;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: space-between;
+          gap: 2em;
+          h2 {
+          }
+          p {
+          }
+          .plan {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: variables.$PaleBlue;
+            padding: 10px;
+            border-radius: 10px;
+            gap: 1rem;
+            img.music {
+            }
+            .price {
+              h4 {
+              }
+              p {
+              }
+            }
+            a {
+              color: variables.$BrightBlue;
+              &:hover {
+                color: lighten($color: variables.$BrightBlue, $amount: 20);
+                text-decoration: none;
+              }
+            }
+          }
+          a.btn {
+            padding: 10px 20px;
+            text-decoration: none;
+            color: variables.$VeryPaleBlue;
+            background: variables.$BrightBlue;
+            width: 100%;
+            border-radius: 10px;
+            text-align: center;
+            &:hover {
+              background: lighten($color: variables.$BrightBlue, $amount: 20);
+            }
+          }
+          a.cancel {
+            text-decoration: none;
+            color: variables.$DesaturatedBlue;
+            &:hover {
+              color: darken($color: variables.$DesaturatedBlue, $amount: 80);
+            }
+          }
+        }
+      }
+    }
+    .attribution {
+      padding: 1em;
+      font-size: 11px;
+      text-align: center;
+      a {
+        color: hsl(228, 45%, 44%);
+      }
+    }
+  }
+  @media (max-width: 767px) {
+    background-image: url(../images/pattern-background-mobile.svg);
+    main {
+      .container {
+        .card {
+          img.hero {
+          }
+          .card-body {
+            padding: 5px;
+            h2 {
+              font-size: 12px;
+            }
+            p {
+              font-size: 10px;
+            }
+            .plan {
+              justify-content: center;
+              gap: 2px;
+              img.music {
+              }
+              .price {
+                h4 {
+                  font-size: 8px;
+                }
+                p {
+                  font-size: 6px;
+                }
+              }
+              a {
+                font-size: 6px;
+              }
+            }
+            a.btn {
+              font-size: 9px;
+            }
+            a {
+              font-size: 10px;
+            }
+          }
+        }
+      }
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+        a {
+          color: hsl(228, 45%, 44%);
+        }
+      }
+    }
+  }
+}
+// Main
