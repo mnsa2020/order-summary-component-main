@@ -34,8 +34,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution URL here](https://github.com/mnsa2020/order-summary-component-main-main)
-- Live Site URL: [Live Site URL here](https://mnsa2020.github.io/order-summary-component-main-main/)
+- Solution URL: [Solution URL here](https://github.com/mnsa2020/order-summary-component-main)
+- Live Site URL: [Live Site URL here](https://mnsa2020.github.io/order-summary-component-main/)
 
 ## My process
 
